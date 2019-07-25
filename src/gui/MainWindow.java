@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JTextPane;
 
 public class MainWindow {
 
@@ -43,6 +44,10 @@ public class MainWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(0, 0, 434, 240);
+		frame.getContentPane().add(textPane);
+		
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
 		
@@ -57,6 +62,15 @@ public class MainWindow {
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Close File");
 		mnNewMenu.add(mntmNewMenuItem_1);
+		
+		JMenu mnNewMenu_2 = new JMenu("Edit");
+		menuBar.add(mnNewMenu_2);
+		
+		JMenuItem mntmNewMenuItem_4 = new JMenuItem("Undo - Ctrl-Z");
+		mnNewMenu_2.add(mntmNewMenuItem_4);
+		
+		JMenuItem mntmNewMenuItem_5 = new JMenuItem("Redo - Ctrl-Y");
+		mnNewMenu_2.add(mntmNewMenuItem_5);
 		
 		JMenu mnNewMenu_1 = new JMenu("About");
 		menuBar.add(mnNewMenu_1);
