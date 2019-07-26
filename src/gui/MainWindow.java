@@ -7,6 +7,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class MainWindow {
 
@@ -45,7 +47,7 @@ public class MainWindow {
 		frame.getContentPane().setLayout(null);
 		
 		JTextPane textPane = new JTextPane();
-		textPane.setBounds(0, 0, 434, 240);
+		textPane.setBounds(0, 0, 450, 256);
 		frame.getContentPane().add(textPane);
 		
 		JMenuBar menuBar = new JMenuBar();
