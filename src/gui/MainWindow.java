@@ -14,6 +14,9 @@ public class MainWindow {
 
 	private JFrame frame;
 	private JTextPane textPane;
+	private JMenu mnNewMenu;
+	private JMenu mnNewMenu_1;
+	private JMenu mnNewMenu_2;
 	private JMenuBar menuBar;
 	private JMenuItem mntmNewMenuItem;
 	private JMenuItem mntmNewMenuItem_1;
@@ -21,11 +24,6 @@ public class MainWindow {
 	private JMenuItem mntmNewMenuItem_3;
 	private JMenuItem mntmNewMenuItem_4;
 	private JMenuItem mntmNewMenuItem_5;
-	
-	
-	
-	
-	
 
 	/**
 	 * Launch the application.
@@ -66,7 +64,7 @@ public class MainWindow {
 		menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
 		
-		JMenu mnNewMenu = new JMenu("File");
+		mnNewMenu = new JMenu("File");
 		menuBar.add(mnNewMenu);
 		
 		mntmNewMenuItem = new JMenuItem("Open File");
@@ -78,7 +76,7 @@ public class MainWindow {
 		mntmNewMenuItem_1 = new JMenuItem("Close File");
 		mnNewMenu.add(mntmNewMenuItem_1);
 		
-		JMenu mnNewMenu_2 = new JMenu("Edit");
+		mnNewMenu_2 = new JMenu("Edit");
 		menuBar.add(mnNewMenu_2);
 		
 		mntmNewMenuItem_4 = new JMenuItem("Undo - Ctrl-Z");
@@ -87,7 +85,7 @@ public class MainWindow {
 		mntmNewMenuItem_5 = new JMenuItem("Redo - Ctrl-Y");
 		mnNewMenu_2.add(mntmNewMenuItem_5);
 		
-		JMenu mnNewMenu_1 = new JMenu("About");
+		mnNewMenu_1 = new JMenu("About");
 		menuBar.add(mnNewMenu_1);
 		
 		mntmNewMenuItem_3 = new JMenuItem("About...");
